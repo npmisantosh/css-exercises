@@ -50,3 +50,6 @@ li{
     justify-content: center;
     align-self: center;
 }
+.button{
+  justify-self: center;
+}

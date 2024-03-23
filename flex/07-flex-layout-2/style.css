@@ -5,15 +5,18 @@ body {
 }
 
 .header {
-  height: 72px;
+  height: 30px;
   background: darkmagenta;
   color: white;
 }
 
 .footer {
-  height: 72px;
   background: #eee;
   color: darkmagenta;
+  width: 100%;
+  display: flex;
+  justify-content: center
+
 }
 
 .sidebar {
@@ -26,4 +29,52 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  gap: 32px;
+  max-width: 300px;
+  padding: 32px;
+}
+
+/*
+
+
+### Self Check
+
+- The footer text is centered horizontally and vertically.
+
+- There is 32px padding around the 'cards' section.
+- The cards are arranged horizontally, but wrap to multiple lines when they run out of room on the page.
+
+
+*/
+.header{
+  font-size: 32px;
+  font-weight: 900;
+  padding: 16px;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content{
+  display: flex;
+  flex-grow: 1;
+}
+.sidebar{
+  flex-shrink: 0;
+  min-width: 300px;
+  padding: 16px;
+}
+
+a{
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
 }
